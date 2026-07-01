@@ -4,6 +4,7 @@ A simple Python desktop application for counting words in a text.
 
 This is a small practice project created to improve my Python skills and learn the basics of GUI development with Tkinter.
 
+
 ## Features
 
 - Count words in any pasted text
@@ -20,27 +21,31 @@ This is a small practice project created to improve my Python skills and learn t
 
 ## How to Run
 
-### Option 1 – Run from source
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Samaelison/word-counter.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd word-counter
+```
+
+3. Run the application:
 
 ```bash
 python gui.py
 ```
 
-### Option 2 – Run the executable
+## Build Executable
 
-Open the generated executable located in the `dist` folder.
+To create a standalone executable:
 
-## Project Structure
-
-```
-.
-├── gui.py          # GUI
-├── logic.py        # Word counting logic
-├── README.md
-└── dist/
-    └── gui.exe
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed gui.py
 ```
 
-## Note
-
-This is a small learning project. The goal was to practice Python fundamentals, text processing with regular expressions, basic project structure, and building a simple desktop GUI using Tkinter.
+The executable will be created inside the `dist` folder.
